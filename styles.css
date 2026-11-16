@@ -319,3 +319,7 @@ html{scroll-padding-top:0;scroll-snap-type:y proximity}
 }
 .hero,.intro,.solution,.app-image-section,.team,.footer{scroll-margin-top:0}
 .team{background-size:116px 116px}
+
+/* Fundo sem grade diagonal: mantém as cores e a faixa lilás do hero */
+body,.hero-grid,.section-pad,.solution,.team,.demo{background-image:none}
+.hero-grid{display:none}
