@@ -107,3 +107,215 @@ a:focus-visible,button:focus-visible{outline:4px solid #e6b800;outline-offset:4p
 @media(max-width:650px){.app-image-layout{grid-template-columns:1fr;gap:26px}.app-image-card{width:min(82%,330px)}}
 
 @media(max-width:650px){.app-image-card{justify-self:center;margin-inline:auto;transform:none}}
+
+.team-section{background:#ead6f9}
+.team-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:32px;margin:28px 0 34px}
+.team-heading h2{max-width:650px;margin:0;font-size:clamp(38px,6vw,68px);line-height:1.02;letter-spacing:-.05em}
+.team-heading>p{max-width:340px;margin:0;color:#514a58;font-size:18px}
+.team-cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.team-card{min-height:205px;padding:22px;background:#fffefa;border:2px solid #17131b;border-radius:8px;box-shadow:6px 7px 0 #17131b20}
+.team-card:nth-child(2){transform:translateY(10px)}
+.team-card:nth-child(3){transform:translateY(-4px)}
+.team-card-mark{display:grid;place-items:center;width:42px;height:42px;margin-bottom:22px;background:#d9b7f2;border-radius:50%;font-size:14px;font-weight:700}
+.team-card h3{margin:0 0 8px;font-size:21px;line-height:1.2}
+.team-card p{margin:0;color:#514a58;font-size:17px}
+@media(max-width:650px){.team-heading{display:block}.team-heading>p{margin-top:14px}.team-cards{grid-template-columns:1fr;gap:14px}.team-card,.team-card:nth-child(n){min-height:0;transform:none}}
+
+/* Destaque da interface em lilás e equipe no formato original de cards */
+.app-image-section{background:#ead6f9}
+.team{background:#fffefa}
+.team-head{display:flex;align-items:end;justify-content:space-between;gap:30px}
+.team-head h2{margin:18px 0 0;font-size:clamp(40px,6vw,68px);line-height:1.02}
+.team-head>p{max-width:380px;margin:0;color:#514a58;font-size:18px}
+.team-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-top:38px}
+.person-card{min-width:0;padding:12px;background:#f8f5fa;border:1.5px solid #17131b;border-radius:7px;box-shadow:4px 5px 0 #17131b18}
+.person-avatar{aspect-ratio:1.12;display:grid;place-items:center;margin-bottom:14px;border-radius:5px;font:700 54px/1 var(--display);color:#fff}
+.avatar-a{background:#8d43d4}.avatar-b{background:#3d8fe8}.avatar-c{background:#d78a42}.avatar-d{background:#538f75}
+.person-meta{display:flex;justify-content:space-between;color:#675c70;font-size:9px;letter-spacing:.13em}
+.person-card h3{margin:9px 0 5px;font-size:18px;line-height:1.2}
+.person-card p{margin:0;color:#514a58;font-size:15px;line-height:1.4}
+@media(max-width:900px){.team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media(max-width:650px){.team-head{display:block}.team-head>p{margin-top:16px}.team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.person-card{padding:10px}.person-avatar{aspect-ratio:1.05;font-size:44px}}
+
+/* Acabamento visual unificado entre a imagem e a equipe */
+.app-image-section{background:#ead6f9}
+.app-image-card{background:#fffefa;border:2px solid #17131b;border-radius:10px;box-shadow:7px 8px 0 #17131b20}
+.team{background:#fffefa}
+.team-grid{gap:16px}
+.person-card{background:#f7f1fc;border:2px solid #17131b;border-radius:9px;box-shadow:5px 6px 0 #17131b18;padding:12px}
+.person-avatar{border-radius:6px}
+.avatar-a{background:#8d43d4}.avatar-b{background:#3d8fe8}.avatar-c{background:#a46bd2}.avatar-d{background:#6d78cb}
+.person-meta{color:#634d73}
+.person-card h3{color:#211b28}
+.person-card p,.team-head>p{color:#514a58}
+@media(max-width:650px){.team-grid{gap:12px}.person-card{padding:10px}}
+
+/* Paleta Voz Ativa: lilás e roxo com amarelo de destaque */
+:root{
+  --purple:#8d43d4;
+  --purple-dark:#5b2a96;
+  --purple-medium:#a46bd2;
+  --lilac:#d9b7f2;
+  --lilac-light:#ead6f9;
+  --lilac-bg:#f7f1fc;
+  --highlight:#ffda52;
+  --cyan:#a46bd2;
+}
+.brand-dot{color:#8d43d4}
+.gradient-text,.solution-heading .gradient-text{
+  background:linear-gradient(100deg,#5b2a96,#a46bd2);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
+.art-halo{background:radial-gradient(circle,#d9b7f277,#8d43d42b 51%,transparent 73%)}
+.art-status i{background:#8d43d4}
+.tech-decoration span{color:#8d43d41a}
+.feature-card:nth-child(3n) .feature-icon{background:#d9b7f2}
+.avatar-a{background:linear-gradient(145deg,#8d43d4,#a46bd2)}
+.avatar-b{background:linear-gradient(145deg,#6a2fb0,#8d43d4)}
+.avatar-c{background:linear-gradient(145deg,#9a5ccf,#b98be0)}
+.avatar-d{background:linear-gradient(145deg,#5b2a96,#7a4fc4)}
+@media(max-width:650px){
+  .menu-toggle span{height:2px;background:#17131b}
+}
+
+/* Acabamentos de roxo/amarelo nos elementos ainda presentes na página */
+.section-kicker span{color:#8d43d4}
+.chip-two{background:#d9b7f2}
+
+/* Alternância de fundos: creme ↔ lilás */
+.app-image-section{background:#fffefa}
+.team{
+  position:relative;
+  background-color:#ecdaf9;
+  background-image:
+    linear-gradient(45deg,transparent 48.8%,#d8c3e5 49.4%,#d8c3e5 50.2%,transparent 50.8%),
+    linear-gradient(-45deg,transparent 48.8%,#d8c3e5 49.4%,#d8c3e5 50.2%,transparent 50.8%);
+}
+.team:before{
+  content:"";position:absolute;z-index:0;top:0;left:0;right:0;height:24px;background:#fffefa;
+  clip-path:polygon(0 0,100% 0,100% 38%,95% 54%,91% 32%,86% 61%,81% 36%,76% 55%,71% 33%,66% 59%,61% 35%,56% 58%,51% 32%,46% 59%,40% 35%,35% 55%,30% 33%,25% 57%,20% 34%,15% 57%,10% 35%,5% 56%,0 33%);
+}
+
+/* Rodapé do hero: acima da faixa recortada e alinhado */
+.hero{padding-bottom:140px}
+.hero-footer{
+  left:7%;right:7%;
+  bottom:64px;
+  align-items:center;
+  z-index:3;
+}
+.hero-footer>span,
+.hero-footer a{
+  display:inline-flex;
+  align-items:center;
+  min-height:44px;
+  line-height:1;
+}
+@media(max-width:650px){
+  .hero{padding-bottom:150px}
+  .hero-footer{bottom:60px}
+}
+
+/* Mais respiro entre o rodapé do hero e a faixa recortada */
+.hero-footer{bottom:88px}
+@media(max-width:650px){.hero-footer{bottom:76px}}
+
+/* Afastamento adicional do rodapé em relação ao recorte inferior do hero */
+.hero-footer{bottom:120px}
+@media(max-width:650px){
+  .hero{padding-bottom:174px}
+  .hero-footer{bottom:100px}
+}
+
+/* Hero responsivo: o rodapé participa do layout e não depende da altura da janela */
+.hero{
+  grid-template-rows:minmax(0,1fr) auto;
+  padding-bottom:88px;
+}
+.hero-content{grid-column:1;grid-row:1}
+.qr-card{grid-column:2;grid-row:1}
+.hero-footer{
+  position:relative;
+  grid-column:1 / -1;
+  grid-row:2;
+  left:auto;right:auto;bottom:auto;
+  width:100%;
+  min-height:48px;
+  margin:18px 0 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:14px;
+  z-index:3;
+  font-size:clamp(8px,1vw,10px);
+  letter-spacing:.12em;
+}
+.hero-footer>span,.hero-footer a{
+  display:inline-flex;
+  align-items:center;
+  min-height:48px;
+  line-height:1;
+  white-space:nowrap;
+}
+@media(max-width:650px){
+  .hero{
+    display:grid;
+    grid-template-columns:minmax(0,1fr);
+    grid-template-rows:auto auto minmax(48px,1fr);
+    align-content:stretch;
+    align-items:start;
+    gap:24px;
+    padding:132px 7% 88px;
+  }
+  .hero-content{grid-column:1;grid-row:1;width:100%}
+  .qr-card{grid-column:1;grid-row:2;justify-self:center;align-self:center}
+  .hero-footer{
+    grid-column:1;grid-row:3;
+    align-self:end;
+    width:100%;
+    margin:0;
+    gap:8px;
+    font-size:clamp(7px,2.3vw,9px);
+    letter-spacing:.08em;
+  }
+  .hero-footer>span,.hero-footer a{min-height:48px}
+}
+
+/* Rodapé do hero: a seção cresce com o conteúdo (nunca corta nem cobre) e o rodapé fica no pé, acima da faixa */
+.hero{height:auto;min-height:max(680px,min(840px,100svh));grid-template-rows:1fr auto}
+.hero-footer{align-self:end}
+@media(max-width:650px){
+  .hero{grid-template-rows:auto auto 1fr}
+}
+@media(min-width:651px){.hero{padding-bottom:100px}}
+
+/* A faixa lilás fica sempre no pé da primeira tela: o hero ocupa a altura toda da janela, sem teto de 840px */
+.hero{min-height:max(680px,100svh);max-height:none}
+
+/* ===== Uma tela por seção, com encaixe (scroll snap) ===== */
+html{scroll-padding-top:0;scroll-snap-type:y proximity}
+.hero,.intro,.solution,.app-image-section,.team{scroll-snap-align:start}
+.footer{scroll-snap-align:end}
+.intro,.solution,.app-image-section,.team{min-height:100svh;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center}
+/* Em telas grandes o encaixe é obrigatório: nunca para no meio entre duas seções */
+@media(min-width:901px) and (min-height:640px){
+  html{scroll-snap-type:y mandatory}
+  .hero,.intro,.solution,.app-image-section,.team{scroll-snap-stop:always}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-snap-type:none}}
+
+/* Ajustes para cada seção caber em uma tela em monitores comuns */
+@media(min-width:901px){
+  .intro,.solution,.app-image-section,.team{padding-top:clamp(72px,11svh,110px);padding-bottom:clamp(36px,7svh,90px)}
+  .app-image-card img{width:auto;max-width:100%;max-height:min(60svh,560px);margin:0 auto}
+}
+@media(min-width:1000px){
+  .feature-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media(min-width:901px) and (max-height:860px){
+  .person-avatar{aspect-ratio:1.5}
+}
+.hero,.intro,.solution,.app-image-section,.team,.footer{scroll-margin-top:0}
+.team{background-size:116px 116px}
